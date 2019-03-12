@@ -4,14 +4,15 @@ class FoodFitnessForm(forms.ModelForm):
     class Meta:
         model = FoodFitnessModel
         exclude = ["userTableForeignKey"]
-        fields = ["username", "calories", "account"]
-class FoodFitnessForm(forms.ModelForm):
-    class Meta:
-        model = usernameModel
-        exclude = ["linkUserForeignKey"]
-        fields = ["username", "calories", "account"]
-class FoodFitnessForm(forms.ModelForm):
-    class Meta:
-        model = calorieModel
-        exclude = ["linkUserForeignKey"]
-        fields = ["username", "calories", "account"]
+        fields = ["username", "calories", "date"]
+
+# class FoodFitnessForm(forms.ModelForm):
+#     class Meta:
+#         model = usernameModel
+#         exclude = ["linkUserForeignKey"]
+#         fields = ["username", "calories", "account"]
+# class FoodFitnessForm(forms.ModelForm):
+#     class Meta:
+#         model = calorieModel
+#         exclude = ["linkUserForeignKey"]
+#         fields = ["username", "calories", "account"]
